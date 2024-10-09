@@ -5,10 +5,10 @@ import ProductItem from './ProductItem';
 
 const BestSeller = () => {
     const { products } = useContext(ShopContext);
-    const [bestSeller, setBestSeller] = useState([]);
+    const [bestseller, setBestSeller] = useState([]);
 
     useEffect(() => {
-        const bestProduct = products.filter((item) => item.bestSeller);
+        const bestProduct = products.filter((item) => item.bestseller);
         setBestSeller(bestProduct.slice(0, 5));
         console.log(bestProduct); // Log filtered products
     }, [products]); // Add products as a dependency
@@ -25,8 +25,8 @@ const BestSeller = () => {
                 </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
-                {bestSeller.length > 0 ? (
-                    bestSeller.map((item, index) => (
+                {bestseller.length > 0 ? (
+                    bestseller.map((item, index) => (
                         <ProductItem
                             key={index}
                             id={item._id}
