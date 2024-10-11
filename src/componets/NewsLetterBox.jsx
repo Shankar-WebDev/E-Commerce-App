@@ -11,9 +11,7 @@ const NewsLetterBox = () => {
       </p>
       <p className="text-gray-400 mt-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi harum
-        quidem quod dolore officiis cupiditate ratione ullam? Error qui illum
-        excepturi, laboriosam consequuntur expedita, aliquid recusandae hic quam
-        consectetur ipsa?
+        quidem 
       </p>
       <form className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3'>
         <input
